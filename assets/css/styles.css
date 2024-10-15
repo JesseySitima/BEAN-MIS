@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; 
+    height: 100vh;
+}
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+a {
+    color: #5cb85c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Header styles */
+header {
+    background-color: #007D84; /* Header background color */
+    color: white; /* Text color */
+    padding: 15px 20px; /* Padding around the header */
+    
+}
+
+.header-container {
+    display: flex; /* Use flexbox to arrange items in a row */
+    justify-content: space-between; /* Space between title and nav */
+    align-items: center; /* Center items vertically */
+}
+
+h1 {
+    margin: 0; /* Remove margin */
+    font-size: 24px; /* Font size for header */
+}
+
+.header-nav {
+    display: flex; /* Use flexbox for nav items */
+}
+
+.header-nav ul {
+    display: flex; /* Use flexbox for list items */
+    list-style: none; /* Remove bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.header-nav ul li {
+    margin-left: 20px; /* Space between nav items */
+}
+
+.header-nav a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.notifications {
+    position: relative; /* Position for notification count */
+}
+
+.notification-count {
+    background-color: red; /* Notification badge color */
+    color: white; /* Badge text color */
+    border-radius: 50%; /* Circular shape */
+    padding: 2px 6px; /* Padding for the badge */
+    position: absolute; /* Position relative to the icon */
+    top: -5px; /* Adjust position */
+    right: -10px; /* Adjust position */
+    font-size: 12px; /* Font size for count */
+}
+
+
+
+
+/* Sidebar styles */
+aside {
+    background-color: #ffff;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+}
+
+.logo-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 120px; /* Adjust the size as needed */
+    height: auto;
+}
+
+aside nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside nav ul li {
+    padding: 15px;
+    text-align: left;
+}
+
+aside nav ul li a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+aside nav ul li a i {
+    margin-right: 10px; /* Add space between the icon and the text */
+}
+
+aside nav ul li a:hover {
+    background-color: #555;
+}
+
+nav ul li a.active {
+    background-color: #007bff; /* Change this to your desired color */
+    color: white; /* Change text color */
+}
+
+/* Main content styles */
+main {
+    margin-left: 250px;
+    padding: 20px;
+    
+}
+
+main h2 {
+    color: #004d80;
+}
+
+main section {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Dashboard styles */
+.dashboard-overview {
+    display: flex; 
+    justify-content: space-between; 
+    margin-bottom: 20px; 
+    border-radius: 10px;
+}
+
+.stat-card {
+    background-color: #FFCC00; 
+    border: 1px solid #ddd; /* Border for card */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px; /* Padding inside the card */
+    margin: 10px; /* Space between cards */
+  
+    flex: 1; /* Allow cards to grow */
+}
+
+.icon {
+    font-size: 30px; /* Adjust icon size */
+    margin-bottom: 10px; /* Space between icon and text */
+}
+
+
+.stat-card:last-child {
+    margin-right: 0; /* Remove margin for the last card */
+}
+
+.card-title {
+    font-size: 15px;
+    color: #555;
+}
+
+.card-total {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.graphs {
+    margin-top: 20px; /* Space above the graphs section */
+    max-width: 800px; /* Limit the max width of the graph section */
+    margin-left: auto; /* Center the graph horizontally */
+    margin-right: auto; /* Center the graph horizontally */
+}
+
+canvas {
+    max-width: 100%; /* Ensure the canvas is responsive */
+    height: 400px; /* Set a fixed height for the graph */
+    width: auto; /* Allow the width to be dynamic */
+}
+
+.admin-tools-section {
+    margin-bottom: 20px;
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #007D84;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+ 
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    aside {
+        width: 200px;
+    }
+    
+    main {
+        margin-left: 200px;
+    }
+}
+
